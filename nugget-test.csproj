@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Lutz Lengemann</Authors>
+    <Company>Lengemann</Company>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>nugget_test.204.01.29.001</PackageId>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RootNamespace>nugget_test</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>0.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="docs\LICENSE.txt" Pack="true" PackagePath=""/>
+    <None Include="docs\README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
