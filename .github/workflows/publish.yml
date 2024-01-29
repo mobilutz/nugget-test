@@ -17,7 +17,7 @@ defaults:
     shell: pwsh
 
 jobs:
-  version_bump:
+  bump_version_and_create_nuget:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -45,19 +45,6 @@ jobs:
           git push --tags
         shell: bash
 
-  create_nuget:
-    runs-on: ubuntu-latest
-    needs:
-      - version_bump
-    steps:
-      - uses: actions/checkout@v3
-        # with:
-        #   fetch-depth: 0 # Get all history to allow automatic versioning using MinVer
-
-      # Install the .NET SDK indicated in the global.json file
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
 
@@ -72,7 +59,7 @@ jobs:
   validate_nuget:
     runs-on: ubuntu-latest
     needs:
-      - create_nuget
+      - bump_version_and_create_nuget
     steps:
       # Install the .NET SDK indicated in the global.json file
       - name: Setup .NET
