@@ -41,8 +41,6 @@ jobs:
           versionize
 
           # Publish to git
-          git add .
-          git commit -m '[skip CI] Version bump'
           git push
           git push --tags
         shell: bash
