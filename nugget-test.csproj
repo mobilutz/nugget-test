@@ -9,6 +9,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <NoWarn>$(NoWarn);CS1591</NoWarn><!-- If all members are not documented, you can disable the compiler warnings -->
     <Nullable>enable</Nullable>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageId>nugget_test.204.01.29.001</PackageId>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl>https://www.tomorrowlabs.io</PackageProjectUrl>
@@ -22,6 +23,7 @@
   <ItemGroup>
     <None Include="docs\LICENSE.txt" Pack="true" PackagePath="" />
     <None Include="docs\README.md" Pack="true" PackagePath="" />
+    <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
