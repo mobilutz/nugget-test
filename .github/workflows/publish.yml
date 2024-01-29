@@ -28,14 +28,17 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
 
-      - name: Bump Version
+      - name: Setup Git User
         run: |
           # Setup git user correctly
           git config --global user.name "Lutz Lengemann"
           git config --global user.email "lutz@lengemann.net"
           encoded_token="$(echo -n "${{ secrets.GH_ACCESS_TOKEN }}" | base64)"
           git config http.https://github.com/.extraheader "AUTHORIZATION: Basic ${encoded_token}"
+        shell: bash
 
+      - name: Bump Version
+        run: |
           # Bump version with versionize https://github.com/versionize/versionize
           dotnet tool install --global Versionize
           versionize
@@ -43,7 +46,6 @@ jobs:
           # Publish to git
           git push
           git push --tags
-        shell: bash
 
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
