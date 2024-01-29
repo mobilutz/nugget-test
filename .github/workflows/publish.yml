@@ -45,6 +45,7 @@ jobs:
           git commit -m '[skip CI] Version bump'
           git push
           git push --tags
+        shell: bash
 
   create_nuget:
     runs-on: ubuntu-latest
