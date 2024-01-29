@@ -38,7 +38,7 @@ jobs:
 
           # Bump version with versionize https://github.com/versionize/versionize
           dotnet tool install --global Versionize
-          versionzie
+          versionize
 
           # Publish to git
           git add .
