@@ -43,9 +43,12 @@ jobs:
           dotnet tool install --global Versionize
           versionize
 
+      - name: Push to git
+        run: |
           # Publish to git
           git push
           git push --tags
+        shell: bash
 
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
