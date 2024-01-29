@@ -38,12 +38,18 @@ jobs:
         shell: bash
 
       - name: Bump Version
+        id: versionize
         run: |
           # Bump version with versionize https://github.com/versionize/versionize
           dotnet tool install --global Versionize
-          versionize
+          versionize --changelog-all --exit-insignificant-commits
+
+      - name: No release required
+        if: steps.versionize.outcome != 'success'
+        run: echo "Skipping Release. No release required."
 
       - name: Push to git
+        if: steps.versionize.outcome == 'success'
         run: |
           # Publish to git
           git push
@@ -51,10 +57,12 @@ jobs:
         shell: bash
 
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
-      - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
+      - if: steps.versionize.outcome == 'success'
+        run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
 
       # Publish the NuGet package as an artifact, so they can be used in the following jobs
       - uses: actions/upload-artifact@v3
+        if: steps.versionize.outcome == 'success'
         with:
           name: nuget
           if-no-files-found: error
