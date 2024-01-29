@@ -33,7 +33,7 @@ jobs:
           # Setup git user correctly
           git config --global user.name "Lutz Lengemann"
           git config --global user.email "lutz@lengemann.net"
-          encoded_token="$(echo -n ${{ secrets.GITHUB_ACCESS_TOKEN }} | base64)"
+          encoded_token="$(echo -n "${{ secrets.GH_ACCESS_TOKEN }}" | base64)"
           git config http.https://github.com/.extraheader "AUTHORIZATION: Basic ${encoded_token}"
 
           # Bump version with versionize https://github.com/versionize/versionize
@@ -73,7 +73,6 @@ jobs:
   validate_nuget:
     runs-on: ubuntu-latest
     needs:
-      - version_bump
       - create_nuget
     steps:
       # Install the .NET SDK indicated in the global.json file
