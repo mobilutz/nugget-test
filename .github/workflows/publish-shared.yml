@@ -1,33 +1,31 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: publish with shared action
+name: Build and Publish NuGet
 on:
   workflow_dispatch:
-
-env:
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
-  DOTNET_NOLOGO: true
-  NuGetDirectory: ${{ github.workspace }}/nuget
 
 defaults:
   run:
     shell: pwsh
 
 jobs:
-  bump_version_and_create_nuget:
+  build_and_publish_nuget:
+    name: Build and Publish NuGet
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Get all history to allow automatic versioning using MinVer
 
-      - uses: actions/checkout@v3
+      - name: Checkout shared actions
+        uses: actions/checkout@v3
         with:
           repository: mobilutz/tl-shared-actions
           path: ./.github/tlabs-actions
           token: ${{ secrets.GH_ACCESS_TOKEN }}
 
-      - name: Do something
+      - name: Build and Publish Nuget
         uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
         with:
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}

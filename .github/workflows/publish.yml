@@ -1,11 +1,8 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: publish
+name: Build and Publish (Hard Coded)
 on:
   workflow_dispatch:
-  # push:
-  #   tags:
-  #     - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
 
 env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
