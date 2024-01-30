@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.4"></a>
+## [0.1.4](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.4) (2024-01-30)
+
+### Bug Fixes
+
+* Tweak workflows ([17b1c27](https://www.github.com/mobilutz/nugget-test/commit/17b1c279ab242303f735cb3d948c78b07b3761e7))
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.3) (2024-01-30)
 
