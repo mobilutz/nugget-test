@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: publish with shared action
+on:
+  workflow_dispatch:
+  # push:
+  #   tags:
+  #     - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  NuGetDirectory: ${{ github.workspace }}/nuget
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  bump_version_and_create_nuget:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: mobilutz/rl-shared-actions
+          path: .github/tlabs-actions
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
+
+      - uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
+        with:
+          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
+          nuget_api_key: ${{ secrets.NUGET_APIKEY }}
