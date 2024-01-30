@@ -26,7 +26,7 @@ jobs:
           path: ${{ github.workspace }}/tlabs-actions
           token: ${{ secrets.GH_ACCESS_TOKEN }}
 
-      - uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
+      - uses: ${{ github.workspace }}/tlabs-actions/publish-nuget-to-nuget_org
         with:
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
           nuget_api_key: ${{ secrets.NUGET_APIKEY }}
