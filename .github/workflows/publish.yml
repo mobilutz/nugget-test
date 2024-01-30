@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Build and Publish (Hard Coded)
+name: OBSOLETE - Build and Publish (Hard Coded)
 on:
   workflow_dispatch:
 
