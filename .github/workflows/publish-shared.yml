@@ -22,12 +22,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0 # Get all history to allow automatic versioning using MinVer
+
+      - uses: actions/checkout@v3
+        with:
           repository: mobilutz/tl-shared-actions
-          path: ./tlabs-actions
+          path: ./.github/tlabs-actions
           token: ${{ secrets.GH_ACCESS_TOKEN }}
 
       - name: Do something
-        uses: ./tlabs-actions/publish-nuget-to-nuget_org
+        uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
         with:
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
           nuget_api_key: ${{ secrets.NUGET_APIKEY }}
