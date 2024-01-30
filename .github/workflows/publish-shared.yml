@@ -3,14 +3,6 @@
 name: publish with shared action
 on:
   workflow_dispatch:
-  # push:
-  #   tags:
-  #     - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
-
-env:
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
-  DOTNET_NOLOGO: true
-  NuGetDirectory: ${{ github.workspace }}/nuget
 
 defaults:
   run:
