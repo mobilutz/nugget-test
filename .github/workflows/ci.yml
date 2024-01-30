@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
 name: CI
+
 on:
   workflow_dispatch: # Allow running the workflow manually from the GitHub UI
   push:
@@ -9,6 +10,10 @@ on:
   pull_request:
     branches:
       - '*'          # Run the workflow for all pull requests
+
+concurrency:
+  group: ci-${{ github.event_name }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 
 env:
   DOTNET_NOLOGO: true
