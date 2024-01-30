@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.1.0"></a>
+## [1.1.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.1.0) (2024-01-30)
+
+### Features
+
+* Add lockfile ([8d2f2ba](https://www.github.com/mobilutz/nugget-test/commit/8d2f2baf98a087e73b81d5ee746d044fb4b9bb82))
+
 <a name="1.0.0"></a>
 ## [1.0.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.0.0) (2024-01-30)
 
