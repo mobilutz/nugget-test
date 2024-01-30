@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.3"></a>
+## [0.1.3](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.3) (2024-01-30)
+
+### Bug Fixes
+
+* Now with step summary ([7f61bc7](https://www.github.com/mobilutz/nugget-test/commit/7f61bc7de168081c8e18e2dba43385bc0f1e3a8c))
+
+### Other
+
+* Merge branch 'main' of https://github.com/mobilutz/nugget-test ([4ae6e0d](https://www.github.com/mobilutz/nugget-test/commit/4ae6e0d6314a978b1aa40b4f98f665cf86e41388))
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.2) (2024-01-30)
 
