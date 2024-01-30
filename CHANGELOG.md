@@ -1,5 +1,20 @@
 # Change Log
 
+<a name="1.0.0"></a>
+## [1.0.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.0.0) (2024-01-30)
+
+### Features
+
+* Workflow deprecation ([6df01aa](https://www.github.com/mobilutz/nugget-test/commit/6df01aac941ba61147a58f9f1d1914018537e9a7))
+
+### Breaking Changes
+
+* Workflow deprecation ([6df01aa](https://www.github.com/mobilutz/nugget-test/commit/6df01aac941ba61147a58f9f1d1914018537e9a7))
+
+### Other
+
+* BREAKING CHANGE: New version ([117e5ed](https://www.github.com/mobilutz/nugget-test/commit/117e5ededcd524f2d53fe89595ebedac3f18e364))
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.4) (2024-01-30)
 
