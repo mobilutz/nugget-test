@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.2) (2024-01-30)
+
+### Bug Fixes
+
+* Workflow ([95c6a5b](https://www.github.com/mobilutz/nugget-test/commit/95c6a5b2b995f1000cb83e02fbf91b5a6beb8226))
+
+### Other
+
+* Another test ([16948f6](https://www.github.com/mobilutz/nugget-test/commit/16948f6aa621b53b9ae5b5f4cd65a877426a72f6))
+* Another test with directory ([725a49f](https://www.github.com/mobilutz/nugget-test/commit/725a49fd6fa20f449f182652b6b0f37e7c6ca00a))
+* Checkout first ([4791ebf](https://www.github.com/mobilutz/nugget-test/commit/4791ebf70ee126b9d9a01992793e8197eac70ba8))
+* Correct action ([72fc213](https://www.github.com/mobilutz/nugget-test/commit/72fc2132d2c9375cd7105eaae60c4f6593166cfe))
+* Correct repo name ([d7fc3a0](https://www.github.com/mobilutz/nugget-test/commit/d7fc3a01d18e75a18357e52e355e8b8cbb349d02))
+* Shared action usage ([9df11df](https://www.github.com/mobilutz/nugget-test/commit/9df11df3d2cdeb040372498ff9b84a637a3d4a45))
+* Use workspace directory ([fa27507](https://www.github.com/mobilutz/nugget-test/commit/fa2750742d7f4e4ec7e68062887d94bd12e4c11b))
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://www.github.com/mobilutz/nugget-test/releases/tag/v0.1.1) (2024-01-29)
 
