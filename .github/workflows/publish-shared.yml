@@ -4,6 +4,11 @@ name: publish with shared action
 on:
   workflow_dispatch:
 
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  NuGetDirectory: ${{ github.workspace }}/nuget
+
 defaults:
   run:
     shell: pwsh
