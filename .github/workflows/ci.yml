@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '2.1.x'
-          cache: true
 
       - name: Run tests
         run: dotnet test --configuration Release
