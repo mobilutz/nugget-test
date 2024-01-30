@@ -6,6 +6,10 @@ name: Build and Publish NuGet
 on:
   workflow_dispatch:
 
+concurrency:
+  group: release
+  cancel-in-progress: true
+
 defaults:
   run:
     shell: pwsh
