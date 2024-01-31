@@ -9,14 +9,9 @@ on:
   pull_request:
     branches:
       - '*'          # Run the workflow for all pull requests
-  release:
-    types:
-      - published    # Run the workflow when a new GitHub release is published
 
 env:
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
   DOTNET_NOLOGO: true
-  NuGetDirectory: ${{ github.workspace }}/nuget
 
 defaults:
   run:
@@ -24,11 +19,15 @@ defaults:
 
 jobs:
   run_test:
+    name: Run tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '2.1.x'
+
       - name: Run tests
         run: dotnet test --configuration Release
-
