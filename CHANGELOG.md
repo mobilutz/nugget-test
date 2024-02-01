@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.1.1"></a>
+## [1.1.1](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.1.1) (2024-01-31)
+
+### Bug Fixes
+
+* Set dotnet version in ci workflow ([#4](https://www.github.com/mobilutz/nugget-test/issues/4)) ([f1227a0](https://www.github.com/mobilutz/nugget-test/commit/f1227a07b7e403789225df83c6da6a59a844e87f))
+
+### Other
+
+* Add nuget to dependabot ([1a27a65](https://www.github.com/mobilutz/nugget-test/commit/1a27a65815c0c9ce7b064ce0a295c5e7e5b8a52c))
+* Remove Microsoft.Extensions.Configuration ([24a3b08](https://www.github.com/mobilutz/nugget-test/commit/24a3b086e244a63a34375a6485f3d99059fafeb3))
+
 <a name="1.1.0"></a>
 ## [1.1.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.1.0) (2024-01-30)
 
