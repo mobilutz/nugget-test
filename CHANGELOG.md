@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.3.0"></a>
+## [1.3.0](https://www.github.com/tlabster/nugget-test/releases/tag/v1.3.0) (2024-02-01)
+
+### Features
+
+* Force dotnet6 ([936649a](https://www.github.com/tlabster/nugget-test/commit/936649ae43a013644ea43907d9276f07df6ce496))
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://www.github.com/tlabster/nugget-test/releases/tag/v1.2.1) (2024-02-01)
 
