@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.2.1"></a>
+## [1.2.1](https://www.github.com/tlabster/nugget-test/releases/tag/v1.2.1) (2024-02-01)
+
+### Bug Fixes
+
+* Remove old publish code ([291b06e](https://www.github.com/tlabster/nugget-test/commit/291b06e6fad61901970097da58ab5585f6c619d4))
+
 <a name="1.2.0"></a>
 ## [1.2.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.2.0) (2024-02-01)
 
