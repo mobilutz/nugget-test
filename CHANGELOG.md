@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.2.0"></a>
+## [1.2.0](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.2.0) (2024-02-01)
+
+### Features
+
+* Add Concurrency for CI runs ([#5](https://www.github.com/mobilutz/nugget-test/issues/5)) ([a2ba9bd](https://www.github.com/mobilutz/nugget-test/commit/a2ba9bd96400850036c8b11af53143ec626f254d))
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://www.github.com/mobilutz/nugget-test/releases/tag/v1.1.1) (2024-01-31)
 
