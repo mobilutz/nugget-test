@@ -1,5 +1,16 @@
 # Change Log
 
+<a name="2.0.0"></a>
+## [2.0.0](https://www.github.com/tlabster/nugget-test/releases/tag/v2.0.0) (2024-02-01)
+
+### Features
+
+* dotnet8 support ([a15c586](https://www.github.com/tlabster/nugget-test/commit/a15c586d0e464239e8bfcac76f650cf44081cf7c))
+
+### Breaking Changes
+
+* dotnet8 support ([a15c586](https://www.github.com/tlabster/nugget-test/commit/a15c586d0e464239e8bfcac76f650cf44081cf7c))
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://www.github.com/tlabster/nugget-test/releases/tag/v1.2.1) (2024-02-01)
 
