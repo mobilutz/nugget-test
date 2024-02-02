@@ -35,4 +35,13 @@ jobs:
           dotnet-version: '2.1.x'
 
       - name: Run tests
-        run: dotnet test --configuration Release
+        run: |
+          dotnet test --configuration Release /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+          ls .
+          ls TestResults
+
+      - name: Publish coverage report to coveralls.io
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./TestResults/coverage.info
