@@ -36,7 +36,6 @@ jobs:
 
       - name: Run tests
         run: |
-          # dotnet restore ./test/nugget-test.test.csproj
           dotnet test ./test/nugget-test.test.csproj --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
       - name: Upload coverage reports to Codecov
