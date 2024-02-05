@@ -1,6 +1,6 @@
-﻿namespace nugget_test;
+﻿namespace UtilityLibraries;
 
-public static class NuggetTest
+public static class StringLibrary
 {
 
   public static bool StartsWithUpper(this string? str)

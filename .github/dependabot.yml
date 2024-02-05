@@ -6,6 +6,10 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: '/'
+    directory: '/src'
+    schedule:
+      interval: daily
+  - package-ecosystem: nuget
+    directory: '/test'
     schedule:
       interval: daily
