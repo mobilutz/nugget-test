@@ -23,7 +23,7 @@ jobs:
       - name: Checkout shared actions
         uses: actions/checkout@v3
         with:
-          repository: mobilutz/tl-shared-actions
+          repository: tlabster/actions
           path: ./.github/tlabs-actions
           token: ${{ secrets.GH_ACCESS_TOKEN }}
 
