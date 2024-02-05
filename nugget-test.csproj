@@ -2,7 +2,10 @@
 
   <PropertyGroup>
     <Authors>Lutz Lengemann</Authors>
+    <CollectCoverage>true</CollectCoverage>
     <Company>Lengemann</Company>
+    <CoverletOutput>coverage/lcov.info</CoverletOutput>
+    <CoverletOutputFormat>lcov</CoverletOutputFormat>
     <Description>A long description to explain the package</Description>
     <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
