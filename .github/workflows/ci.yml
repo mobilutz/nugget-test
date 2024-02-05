@@ -36,12 +36,12 @@ jobs:
 
       - name: Run tests
         run: |
-          dotnet test --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+          # dotnet restore ./test/nugget-test.test.csproj
+          dotnet test ./test/nugget-test.test.csproj --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           ls .
 
-      - name: Publish coverage report to coveralls.io
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          files: ./test/coverage/lcov.info
