@@ -32,7 +32,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '2.1.x'
+          dotnet-version: '8.0.x'
 
       - name: Run tests
         run: |
@@ -44,4 +44,4 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-          files: ./test/coverage/lcov.info
+          # files: ./test/coverage/lcov.info
