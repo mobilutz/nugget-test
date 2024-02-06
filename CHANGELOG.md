@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="2.1.0"></a>
+## [2.1.0](https://www.github.com/tlabster/nugget-test/releases/tag/v2.1.0) (2024-02-06)
+
+### Features
+
+* Add concurrency to build/publish ([#16](https://www.github.com/tlabster/nugget-test/issues/16)) ([42aa9b7](https://www.github.com/tlabster/nugget-test/commit/42aa9b7170b6be6c6fbc47aebad11aff4bd1ec4a))
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://www.github.com/tlabster/nugget-test/releases/tag/v2.0.1) (2024-02-06)
 
