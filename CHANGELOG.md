@@ -1,5 +1,26 @@
 # Change Log
 
+<a name="2.0.1"></a>
+## [2.0.1](https://www.github.com/tlabster/nugget-test/releases/tag/v2.0.1) (2024-02-06)
+
+### Bug Fixes
+
+* Adds readme ([#15](https://www.github.com/tlabster/nugget-test/issues/15)) ([b54a280](https://www.github.com/tlabster/nugget-test/commit/b54a28001462bca1da8a0dca221b2bb7854b7dec))
+* Use shared action ([#14](https://www.github.com/tlabster/nugget-test/issues/14)) ([560053b](https://www.github.com/tlabster/nugget-test/commit/560053b26e43af18cdb2308f1a6b7d19c5f391d3))
+
+### Other
+
+* Add some dummy code ([48ccd07](https://www.github.com/tlabster/nugget-test/commit/48ccd07eb869df990a38bc2e1d3134f2d3b5fb62))
+* Add spec ([9b312cd](https://www.github.com/tlabster/nugget-test/commit/9b312cd170158980492de1e55fba7c66ffcc7e51))
+* Cleanup workflow ([808b33b](https://www.github.com/tlabster/nugget-test/commit/808b33ba307e5db4ed608de6e376a8cebdf587da))
+* Coverage ([f112594](https://www.github.com/tlabster/nugget-test/commit/f1125940fcc22be27657c40b13f29fbf7c75dae5))
+* More coverage tests ([ac5c8de](https://www.github.com/tlabster/nugget-test/commit/ac5c8de7e2930ac87948c6ddb746c209a2b97590))
+* Test ([949c9a1](https://www.github.com/tlabster/nugget-test/commit/949c9a172c284968194a229d15e3bd472fc36f02))
+* Test ([7494b5e](https://www.github.com/tlabster/nugget-test/commit/7494b5e09c74c4c4dc0e33dbb9eb6153cefe5f63))
+* Test ([3c8506b](https://www.github.com/tlabster/nugget-test/commit/3c8506b82e4c2652b084cf46e2490095e87e32b2))
+* Test coverage ([932b487](https://www.github.com/tlabster/nugget-test/commit/932b4875a9de964d8945dfc7ae9bdf12c3973787))
+* Verbose codecov ([d252c92](https://www.github.com/tlabster/nugget-test/commit/d252c92547d46cd1491e6a3baf3832d27201840f))
+
 <a name="2.0.0"></a>
 ## [2.0.0](https://www.github.com/tlabster/nugget-test/releases/tag/v2.0.0) (2024-02-01)
 
