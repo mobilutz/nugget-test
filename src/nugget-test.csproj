@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Authors>Lutz Lengemann</Authors>
-    <Company>Lengemann</Company>
+    <Company>TomorrowLabs</Company>
     <Description>A long description to explain the package</Description>
     <EnablePackageValidation>true</EnablePackageValidation>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
