@@ -35,5 +35,6 @@ jobs:
       - name: Build and Publish NuGet
         uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
         with:
+          context: src
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
           nuget_api_key: ${{ secrets.NUGET_APIKEY }}
