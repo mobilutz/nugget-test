@@ -3,8 +3,13 @@
 # Ref: https://github.com/antosubash/dotnet-version-and-release/blob/main/.github/workflows/dotnet.yml
 
 name: Build and Publish NuGet
+
 on:
   workflow_dispatch:
+
+concurrency:
+  group: build-and-publish
+  cancel-in-progress: true
 
 defaults:
   run:
