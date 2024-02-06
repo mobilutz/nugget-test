@@ -3,8 +3,13 @@
 # Ref: https://github.com/antosubash/dotnet-version-and-release/blob/main/.github/workflows/dotnet.yml
 
 name: Build and Publish NuGet
+
 on:
   workflow_dispatch:
+
+concurrency:
+  group: build-and-publish
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -30,5 +35,6 @@ jobs:
       - name: Build and Publish NuGet
         uses: ./.github/tlabs-actions/publish-nuget-to-nuget_org
         with:
+          context: src
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
           nuget_api_key: ${{ secrets.NUGET_APIKEY }}
