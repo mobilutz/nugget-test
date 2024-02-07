@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="2.1.1"></a>
+## [2.1.1](https://www.github.com/tlabster/nugget-test/releases/tag/v2.1.1) (2024-02-07)
+
+### Bug Fixes
+
+* bump Microsoft.NET.Test.Sdk from 17.1.0 to 17.9.0 in /test ([#18](https://www.github.com/tlabster/nugget-test/issues/18)) ([56c7d2f](https://www.github.com/tlabster/nugget-test/commit/56c7d2f4d5a347e78bfcdcd40f43ad2a9537cc5f))
+
 <a name="2.1.0"></a>
 ## [2.1.0](https://www.github.com/tlabster/nugget-test/releases/tag/v2.1.0) (2024-02-06)
 
