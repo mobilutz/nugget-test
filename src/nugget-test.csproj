@@ -12,7 +12,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageId>nugget_test.204.01.29.001</PackageId>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl>https://www.tomorrowlabs.io</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tlabster/nugget-test</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>sample, library</PackageTags>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
