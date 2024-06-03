@@ -1,7 +1,5 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-# Ref: https://github.com/antosubash/dotnet-version-and-release/blob/main/.github/workflows/dotnet.yml
-
 name: Build and Publish NuGet
 
 on:
