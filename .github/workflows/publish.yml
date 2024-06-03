@@ -4,6 +4,9 @@ name: Build and Publish NuGet
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 concurrency:
   group: build-and-publish
