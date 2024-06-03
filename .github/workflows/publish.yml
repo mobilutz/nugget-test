@@ -38,3 +38,4 @@ jobs:
           context: src
           github_token: ${{ secrets.GH_ACCESS_TOKEN }}
           nuget_api_key: ${{ secrets.NUGET_APIKEY }}
+          slack_bot_token: ${{ secrets.SLACK_BUILD_PROCESS_BOT_TOKEN }}
